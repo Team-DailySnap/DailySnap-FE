@@ -34,3 +34,7 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Expo prebuild로 생성된 폴더 무시
+android/
+ios/

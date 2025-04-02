@@ -24,8 +24,11 @@ jobs:
       - name: 📦 Install dependencies
         run: npm install
 
-      - name: 🏗 Build Check
-        run: npm run build
+      - name: 🔍 Expo Doctor Check
+        run: npx expo doctor
+
+      - name: 🏗 Expo Prebuild Check
+        run: npx expo prebuild --no-install
 
       - name: ✅ Lint Check
         run: npm run lint
