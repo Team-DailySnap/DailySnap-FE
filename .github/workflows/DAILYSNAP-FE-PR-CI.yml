@@ -1,0 +1,37 @@
+name: DAILYSNAP-FE-PR-CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🔧 Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.14.0
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🔍 Expo Doctor Check
+        run: npx expo-doctor
+
+      - name: 🏗 Expo Prebuild Check
+        run: npx expo prebuild --no-install
+
+      - name: ✅ Lint Check
+        run: npm run lint
+
+      - name: 🔍 TypeScript Check
+        run: npx tsc --noEmit
