@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: 🔍 Expo Doctor Check
-        run: npx expo doctor
+        run: npx expo-doctor
 
       - name: 🏗 Expo Prebuild Check
         run: npx expo prebuild --no-install
