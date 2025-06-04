@@ -1,0 +1,4 @@
+set -e
+npx expo-doctor
+npm run lint
+npx tsc --noEmit
