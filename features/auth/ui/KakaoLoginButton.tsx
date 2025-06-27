@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TouchableOpacity, Text, Image, Modal } from "react-native";
+import { TouchableOpacity, Text, Modal } from "react-native";
 import { KakaoLoginWebView } from "./KakaoLoginWebView";
 import type { SocialLoginProps } from "../model/types";
 
