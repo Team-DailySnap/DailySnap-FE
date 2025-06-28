@@ -1,3 +1,7 @@
 module.exports = {
-  singleQuote: true, // single 쿼테이션 사용 여부
+  trailingComma: "es5",
+  tabWidth: 2,
+  printWidth: 100,
+  arrowParens: "avoid",
+  plugins: [],
 };
