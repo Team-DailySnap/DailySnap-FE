@@ -4,3 +4,4 @@ ios
 build
 dist
 tailwind.config.js
+app.config.js
