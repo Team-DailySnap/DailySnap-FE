@@ -26,7 +26,7 @@ export default function RootLayout() {
             <Stack.Screen name="index" />
             <Stack.Screen name="login" />
 
-            {/* 메인 앱 스크린 (탭 네비게이션) */}
+            {/* 메인 앱 스크린  */}
             <Stack.Screen name="(tabs)" />
           </Stack>
         </AuthProvider>
