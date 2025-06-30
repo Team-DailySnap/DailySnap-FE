@@ -21,6 +21,9 @@ jobs:
           node-version: 22.14.0
           cache: "npm"
 
+      - name: 🧹 Remove yarn.lock
+        run: rm -f yarn.lock
+
       - name: 📦 Install dependencies
         run: npm install
 
