@@ -20,6 +20,7 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/consistent-type-imports": "error",
     "import/namespace": "off",
+    "import/no-unresolved": "off",
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
