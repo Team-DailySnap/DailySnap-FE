@@ -19,6 +19,7 @@ module.exports = {
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/consistent-type-imports": "error",
+    "import/namespace": "off",
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -26,5 +27,13 @@ module.exports = {
     tsconfigRootDir: __dirname,
     ecmaVersion: "latest",
     sourceType: "module",
+  },
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+      typescript: false,
+    },
   },
 };
