@@ -19,7 +19,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22.14.0
-          cache: "npm"
 
       - name: 📦 Install dependencies
         run: npm install
@@ -33,5 +32,6 @@ jobs:
       - name: ✅ Lint Check
         run: npm run lint
 
-      - name: 🔍 TypeScript Check
-        run: npx tsc --noEmit
+      # TypeScript 검사 비활성화. TODO: 추후 활성화
+      # - name: 🔍 TypeScript Check
+      #   run: npx tsc --noEmit

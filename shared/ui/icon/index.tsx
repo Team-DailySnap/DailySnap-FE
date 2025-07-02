@@ -1,4 +1,4 @@
-import * as Icons from "@/assets/icons";
+import * as Icons from "@/shared/assets/icons";
 import type { SvgProps } from "react-native-svg";
 
 export type IconsType = typeof Icons;
