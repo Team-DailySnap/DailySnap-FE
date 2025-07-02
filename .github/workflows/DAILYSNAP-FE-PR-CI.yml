@@ -19,13 +19,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22.14.0
-          cache: "npm"
-
-      - name: 🧹 Remove lock files
-        run: |
-          rm -f yarn.lock
-          rm -f package-lock.json
-          git status
 
       - name: 📦 Install dependencies
         run: npm install
