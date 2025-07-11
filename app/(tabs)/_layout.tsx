@@ -25,7 +25,7 @@ export default function TabLayout() {
           name="archive"
           options={{
             title: "아카이빙",
-            tabBarIcon: ({ focused }) => <Icon name={focused ? "archving_active" : "archving"} />,
+            tabBarIcon: ({ focused }) => <Icon name={focused ? "archiving_active" : "archiving"} />,
           }}
         />
         <Tabs.Screen
