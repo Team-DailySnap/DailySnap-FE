@@ -1,1 +1,11 @@
 export { default as search } from "./search.svg";
+export { default as home } from "./home.svg";
+export { default as archiving } from "./archiving.svg";
+export { default as uploading } from "./uploading.svg";
+export { default as ranking } from "./ranking.svg";
+export { default as my } from "./my.svg";
+export { default as home_active } from "./home_active.svg";
+export { default as archiving_active } from "./archiving_active.svg";
+export { default as uploading_active } from "./uploading_active.svg";
+export { default as ranking_active } from "./ranking_active.svg";
+export { default as my_active } from "./my_active.svg";
