@@ -12,7 +12,7 @@ export default function TabLayout() {
   }, []);
 
   return (
-    <SafeAreaView edges={["top"]} style={{ flex: 1 }}>
+    <SafeAreaView edges={["top"]} style={{ flex: 1 }} className="bg-main-color2">
       <Tabs screenOptions={screenOptions}>
         <Tabs.Screen
           name="home"

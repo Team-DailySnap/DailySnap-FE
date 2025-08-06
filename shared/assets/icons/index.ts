@@ -9,3 +9,7 @@ export { default as archiving_active } from "./archiving_active.svg";
 export { default as uploading_active } from "./uploading_active.svg";
 export { default as ranking_active } from "./ranking_active.svg";
 export { default as my_active } from "./my_active.svg";
+export { default as back } from "./back.svg";
+export { default as more } from "./more.svg";
+export { default as attend } from "./attend.svg";
+export { default as logo } from "./logo.svg";

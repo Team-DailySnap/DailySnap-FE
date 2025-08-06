@@ -1,8 +1,8 @@
-import React from "react";
 import { Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
 import { useAuth } from "../../features/auth/model/AuthContext";
+import { HomeHeader } from "@/shared/ui/header";
 
 export default function HomePage() {
   const { logout } = useAuth();
@@ -14,8 +14,8 @@ export default function HomePage() {
   };
 
   return (
-    <SafeAreaView className="flex-1 bg-white">
-      {/* 로그아웃 버튼 */}
+    <SafeAreaView className="flex-1 bg-white" edges={["left", "right", "bottom"]}>
+      <HomeHeader />
       <TouchableOpacity className="bg-red-400 p-4  items-center" onPress={handleLogout}>
         <Text className="text-white">로그아웃 버튼</Text>
       </TouchableOpacity>
