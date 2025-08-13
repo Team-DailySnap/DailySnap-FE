@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function ArchivePage() {
   return (
-    <SafeAreaView className="flex-1 bg-white">
+    <SafeAreaView className="flex-1 bg-[#232323]">
       <View className="items-center mb-10">
         <Text className="">아카이브</Text>
       </View>
